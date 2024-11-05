@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        colors: {
+      'purple100' : 'hsl(254, 88%, 90%)',
+      'purple500': 'hsl(256, 67%, 59%)',
+      'yellow100': 'hsl(31, 66%, 93%)',
+      'yellow500': 'hsl(39, 100%, 71%)',
+      'white': 'hsl(0, 0%, 100%)',
+      'black': 'hsl(0, 0%, 7%)',
+        }
+      } 
+    }
+  </script>
+
+  <title>Frontend Mentor | Bento grid</title>
+</head>
+<body class="bg-black/10 lg:place-content-center lg:grid mx-auto flex justify-center items-center">
+  <main class="lg:w-[1024px] w-[375px] lg:grid grid-cols-5 grid-rows-5 lg:gap-3 my-10">
+
+    <!-- box 1 -->
+      <article class="col-span-2 row-span-2 col-start-2 row-start-1 bg-purple500 rounded-lg text-center lg:h-[310px]">
+        <h1 class="text-white pt-8 px-8 text-5xl">
+            Social Media <span class="text-yellow500">10x</span> <span class="italic">Faster</span> with AI
+        </h1>
+        <div class="flex justify-center items-center pt-8">
+          <img src="./assets/images/illustration-five-stars.webp" alt="rating" class="w-2/4">
+        </div>
+        <p class="text-white/80 pt-2 pb-8">Over 4,000 5-star reviews</p>
+      </article>
+    <!-- end box 1 -->
+
+    <!-- box 2 -->
+      <article class="bg-white col-start-2 row-start-3 p-4 rounded-lg mt-6 lg:mt-[-47px] lg:h-[220px] overflow-hidden">
+        <div class="lg:w-[245px] lg:object-cover">
+          <img src="./assets/images/illustration-multiple-platforms.webp" alt="multiple-plateforms">
+        </div>
+        <h4 class="text-2xl font-semibold pt-2 tracking-tighter leading-6 pr-12">Manage multiple accounts and platforms.</h4>
+      </article>
+    <!-- end box 2 -->
+
+    <!-- box 3 -->
+      <article class="col-start-3 row-start-3 bg-yellow500 rounded-lg  pt-4 px-4 mt-6 lg:h-[220px] lg:mt-[-47px] overflow-hidden">
+        <h4 class="text-2xl font-semibold tracking-tighter leading-6 pr-12">Maintain a consistent posting schedule.</h4>
+        <div class="w-3/4 lg:w-full pt-4">
+          <img src="./assets/images/illustration-consistent-schedule.webp" alt="schedule" class="">
+        </div>
+      </article>
+    <!-- end box 3 -->
+    
+    <!-- box 4 -->
+      <article class="row-span-3 col-start-4 row-start-1 bg-purple100 p-4 lg:py-16 rounded-lg mt-6 lg:mt-0 lg:h-[542px] lg:overflow-hidden ">
+        <h4 class="text-center font-semibold text-2xl lg:text-left tracking-tighter lg:leading-6">Schedule to social media.</h4>
+        <div class="lg:w-[300px]">
+          <img src="./assets/images/illustration-schedule-posts.webp" alt="post" class="pt-4 lg:object-cover">
+        </div>
+        <p class="text-center mx-8 lg:mx-0 leading-5 pt-4 lg:text-left">Optimize post timings to publish content at the perfect time for your audience.</p>
+      </article>
+    <!-- end box 4 -->
+    
+    <!-- box 5 -->
+      <article class="col-span-2 col-start-3 row-start-4 bg-purple500 rounded-lg p-4 mt-6 lg:mt-0 lg:h-[170px] lg:flex lg:items-center">
+        <div class="flex justify-center items-center">
+          <img src="./assets/images/illustration-grow-followers.webp" alt="" class="w-3/5 lg:w-4/5">
+        </div>
+        <h4 class="pt-4 lg:pt-0 text-white text-center text-2xl mx-20 lg:mx-0 leading-6 lg:text-left">Grow followers with non-stop content.</h4>
+      </article>
+    <!-- end box 5 -->
+
+    <!-- box 6 -->
+      <article class="col-start-2 row-start-4 bg-white rounded-lg p-4 mt-6 lg:mt-0 lg:h-[170px]">
+        <div>
+          <h1 class="font-semibold text-4xl">>56%</h1>
+          <p class="lg:text-sm">faster audience growth</p>
+          <div class="pt-4">
+            <img src="./assets/images/illustration-audience-growth.webp" alt="audience-growth" class="w-3/5">
+          </div>
+        </div>
+      </article>
+    <!-- end box 6 -->
+
+    <!-- box 7 -->
+      <article article class="row-span-2 col-start-1 row-start-1 bg-yellow100 p-4 rounded-lg mt-6 lg:mt-0 lg:h-[310px]">
+        <h2 class="text-2xl lg:text-3xl font-semibold tracking-tighter leading-6 py-4 lg:py-6">Create and schedule content <span class="italic text-purple500">quicker.</span></h2>
+        <img src="./assets/images/illustration-create-post.webp" alt="create-post" class="w-3/5 lg:w-full">
+      </article>
+    <!-- end box 7 -->
+
+    <!-- box 8 -->
+      <article class="row-span-2 col-start-1 row-start-3 rounded-lg bg-yellow500 p-4 mt-6 lg:mt-[-47px] lg:mt-0">
+        <h2 class="text-2xl lg:text-3xl font-semibold mr-16 lg:mr-0 leading-6">Write your content using AI.</h2>
+        <img src="./assets/images/illustration-ai-content.webp" alt="ai-content" class="pt-4 lg:pt-8 w-4/5 lg:w-full">
+      </article>
+    <!-- end box 8 -->
+
+  </main>
+</body>
+</html>
